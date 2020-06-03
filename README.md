@@ -24,7 +24,7 @@ Execute `npm install -g json-server` para instalar globalmente o servidor json. 
 
 Execute `ng generate component nome-do-componente` para criar um novo componente. Você também pode usuar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Buildaaaa
+## Build
 
 Execute `ng build` para gerar o compilado do projeto. O projeto vai ser criado dentro do diretório `dist/`. Adicionar `--prod` junto comando de build para gerar minificado e pronto para o ambiente de produção.
 
