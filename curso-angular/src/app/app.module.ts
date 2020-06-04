@@ -29,6 +29,7 @@ import { AlertaComponent } from './shared/components/alerta/alerta.component';
     MaterialModule,
     AppRoutingModule
   ],
+  // components instanciados automaticamente
   entryComponents: [AlertaComponent],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt' }],
   bootstrap: [AppComponent]

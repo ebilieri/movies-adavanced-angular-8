@@ -97,7 +97,9 @@ export class CadastroFilmesComponent implements OnInit {
           possuirBtnFechar: true
         } as Alerta
       };
+
       const dialogRef = this.dialog.open(AlertaComponent, config);
+
       dialogRef.afterClosed().subscribe((opcao: boolean) => {
         if (opcao) {
           this.router.navigateByUrl('filmes');
@@ -106,6 +108,7 @@ export class CadastroFilmesComponent implements OnInit {
         }
       });
     },
+    // Error
     () => {
       const config = {
         data: {

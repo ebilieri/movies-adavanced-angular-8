@@ -26,6 +26,7 @@
       infiniteScroll
       (scrolled)="onScroll()"
       *ngIf="filmes.length; else semRegistro">
+
   <mat-card class="home-card" *ngFor="let filme of filmes">
     <mat-card-header>
       <div mat-card-avatar></div>
@@ -42,6 +43,7 @@
       <button color="accent" mat-raised-button (click)="abrir(filme.id)">ABRIR</button>
     </mat-card-actions>
   </mat-card>
+  
 </div>
 
 <ng-template #semRegistro>

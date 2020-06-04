@@ -18,6 +18,7 @@ export class ListagemFilmesComponent implements OnInit {
     pagina: 0,
     limite: 4
   };
+  
   filmes: Filme[] = [];
   filtrosListagem: FormGroup;
   generos: Array<string>;
@@ -60,6 +61,7 @@ export class ListagemFilmesComponent implements OnInit {
   private listarFilmes(): void {
     this.config.pagina++;
     this.filmesService.listar(this.config)
+    // Srpead Operator ...filmes
       .subscribe((filmes: Filme[]) => this.filmes.push(...filmes));
   }
 
